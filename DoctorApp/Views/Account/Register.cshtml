@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@model DoctorApp.Models.ViewModels.RegisterViewModel
+
+<h2>Sign up</h2>
+<form id="account" method="post" asp-action="Login" asp-controller="Account">
+    <h4> Enter Name, Email Password and role in order to Register </h4>
+    <hr />
+    <div class="form-group row">
+        <label asp-for="Name" class="col-md-2"></label>
+        <div class="col-md-10">
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Email" class="col-md-2"></label>
+        <div class="col-md-10">
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Password" class="col-md-2"></label>
+        <div class="col-md-10">
+            <input asp-for="Password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="ConfirmPassword" class="col-md-2"></label>
+        <div class="col-md-10">
+            <input asp-for="ConfirmPassword" class="form-control" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="RoleName"></label>
+        <div class="col-md-10 offset--md-2">
+            <select asp-for="RoleName" asp-items="@DoctorApp.Utility.Helper.GetRolesForDropDown()" class="form-control"></select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-10 offset-md-2">
+            <input type="submit" value="Register" class=" btn btn bg-success" />
+        </div>
+    </div>
+
+</form>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
