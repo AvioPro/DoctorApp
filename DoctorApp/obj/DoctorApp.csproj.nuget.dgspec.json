@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nanu\\source\\repos\\DoctorApp\\DoctorApp\\DoctorApp.csproj": {}
+    "D:\\School\\SchoolPrograming\\C#\\DoctorsApp\\DoctorApp\\DoctorApp\\DoctorApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nanu\\source\\repos\\DoctorApp\\DoctorApp\\DoctorApp.csproj": {
+    "D:\\School\\SchoolPrograming\\C#\\DoctorsApp\\DoctorApp\\DoctorApp\\DoctorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nanu\\source\\repos\\DoctorApp\\DoctorApp\\DoctorApp.csproj",
+        "projectUniqueName": "D:\\School\\SchoolPrograming\\C#\\DoctorsApp\\DoctorApp\\DoctorApp\\DoctorApp.csproj",
         "projectName": "DoctorApp",
-        "projectPath": "C:\\Users\\nanu\\source\\repos\\DoctorApp\\DoctorApp\\DoctorApp.csproj",
+        "projectPath": "D:\\School\\SchoolPrograming\\C#\\DoctorsApp\\DoctorApp\\DoctorApp\\DoctorApp.csproj",
         "packagesPath": "C:\\Users\\nanu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nanu\\source\\repos\\DoctorApp\\DoctorApp\\obj\\",
+        "outputPath": "D:\\School\\SchoolPrograming\\C#\\DoctorsApp\\DoctorApp\\DoctorApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\nanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,6 +65,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -81,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
